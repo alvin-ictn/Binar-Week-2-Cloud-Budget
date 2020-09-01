@@ -1,0 +1,23 @@
+nav{
+  display:flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items:center;
+}
+
+.menu-list {
+  display:flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+nav > .login{
+  display:flex;
+  flex-direction: row;
+}
+
+nav > .login .flag{
+  display:flex;
+  flex-direction: row;
+  align-items:center;
+}

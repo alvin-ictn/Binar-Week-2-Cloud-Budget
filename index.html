@@ -4,10 +4,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Cloud Budget</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header>
-    <nav>
+    <nav class="navbar">
       <div class="logo">
         <svg width="26" height="19" viewBox="0 0 26 19" fill="black" xmlns="http://www.w3.org/2000/svg">
           <path d="M20.605 8.05002C20.605 7.61502 20.75 7.18002 20.75 6.60002C20.75 3.41002 18.14 0.800018 14.95 0.800018C12.63 0.800018 10.745 2.10502 9.73001 3.99002C9.44001 3.84502 8.86001 3.70002 8.42501 3.70002C6.39501 3.70002 4.80001 5.29502 4.80001 7.32502C4.80001 7.61502 4.80001 7.90502 4.94501 8.05002C2.33501 8.48502 0.450012 10.515 0.450012 13.125C0.450012 15.88 2.77001 18.2 5.52501 18.2H20.025C22.78 18.2 25.1 15.88 25.1 13.125C25.1 10.515 23.215 8.34002 20.605 8.05002Z" fill="black"/>
@@ -15,15 +16,26 @@
         <label for="logo">Cloudbudget</label>
       </div>
       <div class="menu">
-        <ul class="menu-list">
-          <li class="menu-item">Overview</li>
-          <li class="menu-item">Feature</li>
-          <li class="menu-item">Technology</li>
-          <li class="menu-item">Contact</li>
-          <li class="menu-item">Sign Up</li>
-        </ul>
+        <div class="menu-list">
+          <div class="menu-item">Overview</div>
+          <div class="menu-item">Feature</div>
+          <div class="menu-item">Technology</div>
+          <div class="menu-item">Contact</div>
+          <div class="menu-item">Sign Up</div>
+        </div>
       </div>
-      <div class="login"></div>
+      <div class="login">
+        <div class="flag">
+          <img src="" alt="" class="thumbnail">
+          <p class="region">EN</p>
+          <svg width="14" height="8" viewBox="0 0 14 8" fill="black" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12.7727 0.273438H1.22735C0.881062 0.273438 0.687703 0.639062 0.902156 0.888672L6.67481 7.58242C6.84005 7.77402 7.15821 7.77402 7.3252 7.58242L13.0979 0.888672C13.3123 0.639062 13.119 0.273438 12.7727 0.273438Z" fill="black"/>
+          </svg>
+        </div>
+        <button class="login">
+          Login
+        </button>
+      </div>
     </nav>
     <section class="header">
 
