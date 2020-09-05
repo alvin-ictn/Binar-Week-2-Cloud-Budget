@@ -1,28 +1,96 @@
+:root {
+  --primary-color : #fff;
+  --secondary-color : #000;
+  --pallete1 : #D52047;
+  --pallete2 : #EE3D1B;
+}
+
+body {
+  margin:0;
+  padding:0;
+  font-family: Lato;
+  font-style: normal;
+}
+
 header{
   display:flex;
   flex-direction: column;
 }
-nav{
+
+nav.navbar{
   display:flex;
   flex-direction: row;
   justify-content: space-between;
   align-items:center;
-  color:black;
+  color : var(--primary-color);
+  margin-top:15px;
+  padding:40px 150px;
+  text-transform: uppercase;
+  fill:var(--primary-color);
 }
 
+.navbar > .logo {
+  display: flex;
+  justify-items: center;
+}
+
+.navbar > .logo svg {
+  margin-right:5px;
+}
+
+.navbar > .menu {
+  flex-grow:0.5;
+}
 .menu-list {
   display:flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-evenly;
+}
+
+.menu-list .menu-item {
+  cursor: pointer;
 }
 
 nav > .login{
   display:flex;
   flex-direction: row;
+  align-items: center;
 }
 
 nav > .login .flag{
   display:flex;
   flex-direction: row;
   align-items:center;
+}
+
+nav > .login .flag svg {
+  cursor: pointer;
+}
+
+nav > .login .flag *:not(.login){
+  margin-right:10px;
+}
+
+nav > .login .login {
+  margin-left: 20px;
+  width: 100px;
+  height: 40px;
+  background: transparent;
+  border-radius: 6px;
+  border: 1px solid var(--primary-color);
+  color: var(--primary-color);
+}
+
+nav > .login .flag img {
+  width:32px;
+  height:32px;
+}
+
+header{
+  background: linear-gradient(to right,rgba(213, 32, 71  , 0.7),rgba(238, 61, 27, 0.7)),url("assets/img/banner.jpg") no-repeat center center fixed;
+  height: 100vh;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
