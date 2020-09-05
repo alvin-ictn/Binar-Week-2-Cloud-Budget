@@ -4,6 +4,10 @@
   --pallete1 : #ED4C5C;
   --pallete2 : #EE3D1B;
 }
+/* cursor setup */
+button, .flag svg, .play-button, .learn-more {
+  cursor:pointer;
+}
 
 body {
   margin:0;
@@ -11,7 +15,7 @@ body {
   font-family: Lato;
   font-style: normal;
 }
-
+/**** Header Part ****/
 header{
   display:flex;
   flex-direction: column;
@@ -48,15 +52,12 @@ nav.navbar{
 .navbar > .menu {
   flex-grow:0.5;
 }
+
 .menu-list {
   display:flex;
   flex-direction: row;
   justify-content: space-evenly;
   font-size: 14px;
-}
-
-.menu-list .menu-item {
-  cursor: pointer;
 }
 
 nav > .login{
@@ -69,10 +70,6 @@ nav > .login .flag{
   display:flex;
   flex-direction: row;
   align-items:center;
-}
-
-nav > .login .flag svg {
-  cursor: pointer;
 }
 
 nav > .login .flag *:not(.login){
@@ -117,6 +114,7 @@ section.header .information {
 }
 
 section.header button {
+  margin:40px;
   align-self: center;
   font-weight: 600;
   text-transform: uppercase;
@@ -127,3 +125,72 @@ section.header button {
   border-radius: 6px;
   color: var(--pallete1)
 }
+/**** END Header Part ****/
+
+
+/**** Video Part ****/
+section.video {
+  display:flex;
+  flex-direction: row;
+  max-height:500px;
+  padding: 100px 150px;
+}
+
+section.video > .video-information {
+  margin-right:100px;
+  align-self: center;
+}
+
+section.video > .video-information .video-title {
+  font-size: 36px;
+  line-height: 43px;
+}
+
+section.video > .video-information .video-description, .learn-more{
+  font-size: 14px;
+  line-height: 140%;
+  text-align: justify;
+}
+
+section.video > .video-information .learn-more {
+  color : var(--pallete1);
+}
+
+
+section.video > .video-panel {
+
+}
+
+section.video > .video-panel .play-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 66px;
+  height: 66px;
+  background-color: var(--pallete1);
+  border-radius: 50%;
+  position: relative;
+  top: 50%;
+  left: -33px;
+}
+/**** END Video Part ****/
+
+
+/**** Feature Part ****/
+
+/**** END Feature Part ****/
+
+
+/**** Technology Part ****/
+
+/**** END Technology Part ****/
+
+
+/**** Download App Part ****/
+
+/**** END Download App Part ****/
+
+
+/**** Footer Part ****/
+
+/**** END Footer Part ****/
