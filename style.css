@@ -156,11 +156,6 @@ section.video > .video-information .learn-more {
   color : var(--pallete1);
 }
 
-
-section.video > .video-panel {
-
-}
-
 section.video > .video-panel .play-button {
   display: flex;
   align-items: center;
@@ -289,8 +284,69 @@ section.technology .tech-list .tech-item .tech-title {
 
 /**** Download App Part ****/
 section.download {
-  
+  display:flex;
+  flex-direction: row;
+  background: var(--pallete1);
+  color: var(--primary-color);
+  align-items: center;
+  height:500px;
+  padding:0 165px;
 }
+
+section.download > .download-information {
+  margin-right:100px;
+  align-self: center;
+}
+
+section.download > .download-information .download-title {
+  font-size: 36px;
+  line-height: 43px;
+}
+
+section.download > .download-information .download-description{
+  font-size: 14px;
+  line-height: 140%;
+  text-align: justify;
+  margin:40px 0;
+}
+
+.download-method {
+  display: flex;
+}
+
+.download-method * {
+  align-self:center;
+  margin-right: 20px;
+}
+
+.carousel {
+  height:311px;
+}
+
+.carousel img {
+  border-radius:15px;
+}
+
+.carousel img:nth-child(1){
+  position: relative;
+  z-index: 999;
+}
+
+.carousel img:nth-child(n+2){
+  position: relative;
+  opacity: 0.5;
+}
+
+.carousel img:nth-child(2) {
+  top:calc(24px - 100%);
+  left: -10%;
+}
+
+.carousel img:nth-child(3) {
+  top:calc(64px - 200%);
+  right: -20%;
+}
+
 /**** END Download App Part ****/
 
 
