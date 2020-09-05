@@ -177,7 +177,57 @@ section.video > .video-panel .play-button {
 
 
 /**** Feature Part ****/
+section.feature {
+  padding:60px;
+  background: #FAFAFA;
+  display:flex;
+  flex-direction: column;
+  text-align: center;
+}
 
+section.feature h2 {
+  font-size: 36px;
+  line-height: 43px;
+  margin-bottom: 60px;
+}
+
+section.feature > .card-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+section.feature > .card-list .card .card-info{
+  padding:35px;
+  background: var(--primary-color);
+  position:relative;
+  bottom:105px;
+  left:25px;
+  width:300px;
+  box-sizing: border-box;
+  align-self:center;
+  border-radius:5px;
+  box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.1);
+}
+
+.card .card-info .card-info-head {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 22px;
+}
+
+.card .card-info .card-info-body {
+  font-size: 12px;
+  line-height: 150%;
+}
+
+.card .card-info .card-info-foot {
+  padding-top:15px;
+  font-size: 12px;
+  line-height: 150%;
+  color: var(--pallete1);
+  margin: 0;
+}
 /**** END Feature Part ****/
 
 
