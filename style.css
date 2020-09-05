@@ -397,5 +397,48 @@ section.contact > .contact-form button {
 
 
 /**** Footer Part ****/
+footer {
+  position: relative;
+  bottom:0;
+  padding:80px 160px;
+  background: #FAFAFA;
+}
 
+footer .address-info {
+  display:flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+footer .title {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+}
+
+footer .item{
+  font-size: 14px;
+  line-height: 140%;
+}
+
+footer .address-info div:nth-last-child(1) {
+  display:flex;
+  flex-direction: column;
+}
+
+footer .address-info label {
+  margin-bottom:20px;
+}
+
+footer .address-info p:first-of-type {
+  padding-top:20px;
+}
+
+footer .address-info .contact svg {
+  margin-right: 10px;
+}
+
+.copyright {
+  margin-top:100px;
+}
 /**** END Footer Part ****/
