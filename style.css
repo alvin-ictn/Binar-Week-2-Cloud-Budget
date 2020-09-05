@@ -5,7 +5,7 @@
   --pallete2 : #EE3D1B;
 }
 /* cursor setup */
-button, .flag svg, .play-button, .learn-more {
+button, .flag svg, .play-button, .learn-more, footer p:not(.copyright) {
   cursor:pointer;
 }
 
