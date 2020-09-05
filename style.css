@@ -350,6 +350,52 @@ section.download > .download-information .download-description{
 /**** END Download App Part ****/
 
 
+/**** Contact Part ****/
+section.contact {
+  display:flex;
+  flex-direction: row;
+  padding: 80px 160px;
+}
+
+section.contact > .contact-information .contact-title{
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 43px;
+}
+
+section.contact > .contact-information .contact-description{
+  margin:60px 80px 0 0;
+  font-size: 14px;
+  line-height: 140%;
+}
+
+section.contact > .contact-form {
+  display:flex;
+  flex-direction: column;
+}
+
+section.contact > .contact-form .name {
+  display:flex;
+  flex-direction: row;
+}
+
+section.contact > .contact-form *:not(div) {
+  border: 1px solid #333333;
+  box-sizing: border-box;
+  padding: 20px 30px;
+  border-radius: 6px;
+  margin:12px 15px;
+}
+
+section.contact > .contact-form button {
+  width: 160px;
+  background: var(--pallete1);
+  color: var(--primary-color);
+  border:0;
+}
+/**** END Contact Part ****/
+
+
 /**** Footer Part ****/
 
 /**** END Footer Part ****/
