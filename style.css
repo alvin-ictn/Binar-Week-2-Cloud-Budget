@@ -1,7 +1,7 @@
 :root {
   --primary-color : #fff;
   --secondary-color : #000;
-  --pallete1 : #D52047;
+  --pallete1 : #ED4C5C;
   --pallete2 : #EE3D1B;
 }
 
@@ -15,6 +15,12 @@ body {
 header{
   display:flex;
   flex-direction: column;
+  background: linear-gradient(to right,rgba(213, 32, 71  , 0.7),rgba(238, 61, 27, 0.7)),url("assets/img/banner.jpg") no-repeat center center fixed;
+  height: 100vh;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 nav.navbar{
@@ -32,6 +38,7 @@ nav.navbar{
 .navbar > .logo {
   display: flex;
   justify-items: center;
+  font-size: 18px;
 }
 
 .navbar > .logo svg {
@@ -45,6 +52,7 @@ nav.navbar{
   display:flex;
   flex-direction: row;
   justify-content: space-evenly;
+  font-size: 14px;
 }
 
 .menu-list .menu-item {
@@ -86,11 +94,36 @@ nav > .login .flag img {
   height:32px;
 }
 
-header{
-  background: linear-gradient(to right,rgba(213, 32, 71  , 0.7),rgba(238, 61, 27, 0.7)),url("assets/img/banner.jpg") no-repeat center center fixed;
-  height: 100vh;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+section.header{
+  color: var(--primary-color);
+  display: flex;
+  flex-direction: column;
+}
+
+section.header .banner-title {
+  letter-spacing: 0.05em;
+  font-size: 72px;
+  text-align: center;
+  font-weight: 600;
+}
+
+section.header .information {
+  font-size: 24px;
+  font-weight: 400;
+  text-align: center;
+  align-self: center;
+  max-width: 500px;
+  line-height: 36px;
+}
+
+section.header button {
+  align-self: center;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 14px;
+  border: 0;
+  padding: 15px 50px;
+  background: var(--primary-color);
+  border-radius: 6px;
+  color: var(--pallete1)
 }
