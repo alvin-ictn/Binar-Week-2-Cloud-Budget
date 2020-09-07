@@ -321,6 +321,7 @@ section.download > .download-information .download-description{
 
 .carousel {
   height:311px;
+  position: relative;
 }
 
 .carousel img {
@@ -338,13 +339,15 @@ section.download > .download-information .download-description{
 }
 
 .carousel img:nth-child(2) {
-  top:calc(24px - 100%);
-  left: -10%;
+  position: absolute;
+  top: 50%;
+  transform: translate(-150%,-50%);
 }
 
 .carousel img:nth-child(3) {
-  top:calc(64px - 200%);
-  right: -20%;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%,-50%);
 }
 
 /**** END Download App Part ****/
